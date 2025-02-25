@@ -1,0 +1,15 @@
+mkdir interpreter-foundation
+cd interpreter-foundation
+npm init -y
+npm install --save-dev gulp gulp-sass sass gulp-autoprefixer gulp-clean-css gulp-sourcemaps browser-sync bootstrap @popperjs/core @fortawesome/fontawesome-free
+mkdir -p src/scss/components
+mkdir -p src/scss/pages
+mkdir -p dist/css
+mkdir -p assets/images
+mkdir -p assets/fonts
+touch src/scss/pages/_home.scss 
+mv src/scss/components/header.scss src/scss/components/_header.scss
+mv src/scss/components/hero.scss src/scss/components/_hero.scss
+mv src/scss/components/features.scss src/scss/components/_features.scss 
+mv src/scss/variables.scss src/scss/_variables.scss 
+mv ppneuemontreal-bold.woff assets/fonts/ 

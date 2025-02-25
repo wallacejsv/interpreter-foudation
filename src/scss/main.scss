@@ -1,0 +1,32 @@
+// Fontes
+@import "./fonts";
+
+// Variáveis personalizadas
+@import "./variables";
+
+// Bootstrap
+// Primeiro importamos as funções do Bootstrap para usar nas variáveis
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Agora importamos o Bootstrap completo
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+
+// Componentes personalizados
+@import "./components/header";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/whats-happening";
+@import "./components/latest-articles";
+@import "./components/topic-materials";
+@import "./components/donate";
+@import "./components/footer";
+
+// Páginas
+@import "./pages/home"; 

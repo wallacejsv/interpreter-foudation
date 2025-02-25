@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Interpreter Foundation</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container container-custom-header">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="assets/images/logo.svg" alt="The Interpreter Foundation"> -->
+                    <img src="assets/images/tip-logo-lockup-white.svg" 
+                        srcset="assets/images/tip-logo-lockup-white.png,
+                            assets/images/tip-logo-lockup-white@2x.png"
+                        alt="The Interpreter Foundation">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                THE JOURNAL <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Current Issue</a></li>
+                                <li><a class="dropdown-item" href="#">Past Issues</a></li>
+                                <li><a class="dropdown-item" href="#">Submit Article</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                STUDY <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Scripture Roundtable</a></li>
+                                <li><a class="dropdown-item" href="#">Come, Follow Me</a></li>
+                                <li><a class="dropdown-item" href="#">Conference Talks</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                THE FOUNDATION <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Board Members</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item search-item">
+                            <div class="search-wrapper">
+                                <input type="text" class="search-input" placeholder="SEARCH">
+                                <button type="button" class="search-button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-none donate-item">
+                            <a class="nav-link donate-btn" href="#">
+                                DONATE <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-lg-flex justify-content-end bt-donate-header">
+                    <a class="nav-link donate-btn" href="#">
+                        DONATE <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container p-0">
+            <div class="language-selector">
+                <div class="dropdown">
+                    <label>Language :</label>
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        ENGLISH <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                        <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                        <li><a class="dropdown-item" href="#">PORTUGUÊS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 custom-hero">
+                    <p class="subtitle">THE INTERPRETER FOUNDATION — A NONPROFIT EDUCATIONAL ORGANIZATION FOCUSED ON THE SCRIPTURES</p>
+                    <h1>SUPPORTING FAITH</h1>
+                    
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="/assets/images/jesus.jpg" alt="Jesus" title="Jesus">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                            <span class="accordion-title">Testimonies of the Witnesses to the Book of Mormon</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <!-- Conteúdo do accordion -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                            <span class="accordion-title">Supporting The Church of Jesus Christ of Latter-day Saints Deseret Book's</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <!-- Conteúdo do accordion -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                            <span class="accordion-title">What is My Witness Event</span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <!-- Conteúdo do accordion -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="disclaimer">
+                                All journal publications and video presentations are available for free by digital download 
+                                and streaming. The price of hard copy versions of journal articles covers only the cost of printing; 
+                                books are typically priced to help cover both author and publication expenses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/man1.jpg" alt="The Journal">
+                        </div>
+                        <div class="content">
+                            <h3>THE JOURNAL</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elusmod tempor.</p>
+                            <a href="#" class="continue-reading">
+                                CONTINUE READING <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/woman1.jpg" alt="Come, Follow Me">
+                        </div>
+                        <div class="content">
+                            <h3>COME, FOLLOW ME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elusmod tempor.</p>
+                            <a href="#" class="continue-reading">
+                                CONTINUE READING <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="image-wrapper">
+                            <img src="/assets/images/picture.jpg" alt="Study Series">
+                        </div>
+                        <div class="content">
+                            <h3>STUDY SERIES</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elusmod tempor.</p>
+                            <a href="#" class="continue-reading">
+                                CONTINUE READING <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Happening Section -->
+    <section class="whats-happening">
+        <div class="container">
+            <div class="section-header">
+                <h2>WHAT'S <span>HAPPENING</span></h2>
+                <a href="#" class="view-all desktop">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            
+
+            <div class="happening-items">
+                <div class="happening-item">
+                    <div class="image-wrapper">
+                        <img src="/assets/images/happening1.jpg" alt="Temple on Mount Zion Conference">
+                    </div>
+                    <div class="content">
+                        <h3>2022 TEMPLE ON MOUNT ZION CONFERENCE</h3>
+                        <p class="description">Interpreter Foundation Annual Conference. </p>
+                        <div class="meta">
+                            <span class="date">Third quarter TBA</span>
+                            <span class="location">Location name</span>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.</p>
+                        <a href="#" class="learn-more">LEARN MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="happening-item">
+                    <div class="image-wrapper">
+                        <img src="/assets/images/happening2.jpg" alt="Temple on Mount Zion Conference">
+                    </div>
+                    <div class="content">
+                        <h3>2022 TEMPLE ON MOUNT ZION CONFERENCE</h3>
+                        <p class="description">Interpreter Foundation Annual Conference. </p>
+                        <div class="meta">
+                            <span class="date">Third quarter TBA</span>
+                            <span class="location">Location name</span>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.</p>
+                        <a href="#" class="learn-more">LEARN MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="happening-item">
+                    <div class="image-wrapper">
+                        <img src="/assets/images/happening3.jpg" alt="Temple on Mount Zion Conference">
+                    </div>
+                    <div class="content">
+                        <h3>2022 TEMPLE ON MOUNT ZION CONFERENCE</h3>
+                        <p class="description">Interpreter Foundation Annual Conference. </p>
+                        <div class="meta">
+                            <span class="date">Third quarter TBA</span>
+                            <span class="location">Location name</span>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.</p>
+                        <a href="#" class="learn-more">LEARN MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="happening-item">
+                    <div class="image-wrapper">
+                        <img src="/assets/images/happening4.jpg" alt="Temple on Mount Zion Conference">
+                    </div>
+                    <div class="content">
+                        <h3>2022 TEMPLE ON MOUNT ZION CONFERENCE</h3>
+                        <p class="description">Interpreter Foundation Annual Conference. </p>
+                        <div class="meta">
+                            <span class="date">Third quarter TBA</span>
+                            <span class="location">Location name</span>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.</p>
+                        <a href="#" class="learn-more">LEARN MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="view-all mobile">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="latest-articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>LATEST <span>ARTICLES</span></h2>
+                <!-- <a href="#" class="view-all">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a> -->
+            </div>
+
+            <div class="articles-content">
+                <div class="articles-list">
+                    <div class="article-item active" data-article="1">
+                        <span class="category"><b>STUDY SERIES</b></span>
+                        <h3>SCRIPTURAL REFERENCES</h3>
+                        <span class="date">Author | 01.02.2024</span>
+                    </div>
+                    <div class="article-item" data-article="2">
+                        <span class="category"><b>THE JOURNAL</b></span>
+                        <h3>LESSON PLANS</h3>
+                        <span class="date">Author | 01.02.2024</span>
+                    </div>
+                    <div class="article-item" data-article="3">
+                        <span class="category"><b>STUDY ARTICLE</b></span>
+                        <h3>RESEARCH OF FAITH</h3>
+                        <span class="date">Author | 01.02.2024</span>
+                    </div>
+                    <div class="article-item" data-article="4">
+                        <span class="category"><b>STUDY SERIES</b></span>
+                        <h3>SCHOLARLY RELEASES</h3>
+                        <span class="date">Author | 01.02.2024</span>
+                    </div>
+                </div>
+
+                <div class="article-preview">
+                    <img src="/assets/images/article1.png" alt="Article Preview" class="active" data-article="1">
+                    <img src="/assets/images/article2.png" alt="Article Preview" data-article="2">
+                    <img src="/assets/images/article1.png" alt="Article Preview" data-article="3">
+                    <img src="/assets/images/article2.png" alt="Article Preview" data-article="4">
+                </div>
+
+                <div class="article-content">
+                    <div class="content active" data-article="1">
+                        <p>Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="content" data-article="2">
+                        <p>Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus2.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="content" data-article="3">
+                        <p>Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus3.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="content" data-article="4">
+                        <p>Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus4.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Based Materials Section -->
+    <section class="topic-materials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Topic Based <span>Materials</span></h2>
+            </div>
+
+            <div class="materials-description">
+                <p>Begin your study journey here. Dig deep into the topics that interest you and
+                    use our vast array of media  to find answers, gather knowledge, and ultimately
+                    gain a better understanding of the teachings of the Church.</p>
+            </div>
+
+            <div class="materials-content">
+                <div class="materials-image">
+                    <img src="/assets/images/materials.png" alt="Topic Based Materials">
+                </div>
+                <div class="materials-links">
+                    <a href="#0" class="material-link">
+                        INTERPRETER RADIO
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#0" class="material-link">
+                        INTERPRETER CONFERENCES
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#0" class="material-link">
+                        INTERPRETER STUDY TRAVEL
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#0" class="material-link">
+                        INTERPRETER BOOKS
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#0" class="material-link">
+                        INTERPRETER FILMS
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-end">
+                <a href="#" class="view-all">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate">
+        <div class="container">
+            <div class="section-header">
+                <h2>DONATE <span>NOW</span></h2>
+            </div>
+
+            <div class="donate-description">
+                <h3>DONATE TO THE CAUSE</h3>
+                <p>
+                    The Interpreter Foundation is a nonprofit organization. All journal publications and video presentations are available for free by digital download and streaming. 
+                    The price of hard copy versions of journal articles covers only the cost of printing; books are typically priced to help cover both author and publication expenses 
+                    and royalties to authors when applicable. In some cases, the Foundation may subsidize publication costs to keep retail prices affordable.
+                </p>
+                <p class="disclaimer">
+                    The Foundation does not profit from sales of its publications.
+                </p>
+            </div>
+
+            <div class="donate-action">
+                <a href="#" class="donate-button">
+                    DONATE <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col">
+                        <h3>THE JOURNAL</h3>
+                        <ul>
+                            <li><a href="#0">JOURNAL INDEXES</a></li>
+                            <li><a href="#0">CURRENT VOLUME</a></li>
+                            <li><a href="#0">VOLUME INDEX</a></li>
+                            <li><a href="#0">TOPIC INDEX</a></li>
+                            <li><a href="#0">AUTHOR INDEX</a></li>
+                            <li><a href="#0">TITLE INDEX</a></li>
+                            <li><a href="#0">SCRIPTURE INDEX</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>STUDY</h3>
+                        <ul>
+                            <li><a href="#0">COME, FOLLOW ME</a></li>
+                            <li><a href="#0">INTERPRETER RADIO</a></li>
+                            <li><a href="#0">INTERPRETER CONFERENCES</a></li>
+                            <li><a href="#0">INTERPRETER STUDY TRAVEL</a></li>
+                            <li><a href="#0">STUDY SERIES</a></li>
+                            <li><a href="#0">STUDY INDEXES</a></li>
+                            <li><a href="#0">STUDY ARCHIVE</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>THE FOUNDATION</h3>
+                        <ul>
+                            <li><a href="#0">INTERPRETER EVENTS</a></li>
+                            <li><a href="#0">INTERPRETER FILMS</a></li>
+                            <li><a href="#0">INTERPRETER BOOKS</a></li>
+                            <li><a href="#0">INTERPRETER EXPENSES</a></li>
+                            <li><a href="#0">SUBSCRIBE</a></li>
+                            <li><a href="#0">DONATE</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>INFORMATION</h3>
+                        <ul>
+                            <li><a href="#0">PRIVACY POLICY</a></li>
+                            <li><a href="#0">TERMS OF SERVICE</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>FOLLOW US</h3>
+                        <ul>
+                            <li><a href="#0">FACEBOOK</a></li>
+                            <li><a href="#0">TWITTER</a></li>
+                            <li><a href="#0">YOUTUBE</a></li>
+                            <li><a href="#0">TIKTOK</a></li>
+                            <li><a href="#0">INSTAGRAM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <div class="row">
+                    <div class="col-md-8 form-content-item-footer">
+                        <div class="subscribe-form">
+                            <input type="text" placeholder="Enter your name...">
+                            <input type="email" placeholder="Enter your email...">
+                            <button type="submit">SUBSCRIBE <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="content-footer-bottom-final">
+                    <div class="item">
+                        <a href="#" class="footer-logo">
+                            <img src="assets/images/logo-footer.png" alt="The Interpreter Foundation">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="responsibility">
+                            RESPONSIBILITY<br>
+                            — FOR CONTENT
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="nonprofit">
+                            A 501(c)(3) nonprofit organization
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="nonprofit">
+                            All journal publications and video presentations are available for free by digital download and streaming.
+                            The price of hard copy versions of journal articles covers only the cost of printing; books are typically
+                            priced to help cover both upfront pre-publication expenses and royalties to authors when applicable.
+                            In some cases, the Foundation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer>
+
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.site-header');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Configuração do accordion
+            const myAccordion = new bootstrap.Collapse(document.querySelector('.accordion'), {
+                toggle: false
+            });
+
+            const articleItems = document.querySelectorAll('.article-item');
+            const previewImages = document.querySelectorAll('.article-preview img');
+            const contents = document.querySelectorAll('.article-content .content');
+
+            articleItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all items
+                    articleItems.forEach(i => i.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked item
+                    this.classList.add('active');
+
+                    // Show corresponding content
+                    const articleId = this.dataset.article;
+                    document.querySelector(`.content[data-article="${articleId}"]`).classList.add('active');
+
+                    // Handle image transition
+                    const currentActive = document.querySelector('.article-preview img.active');
+                    if (currentActive) {
+                        currentActive.classList.remove('active');
+                        currentActive.classList.add('previous');
+                        
+                        // Remove previous class after transition
+                        setTimeout(() => {
+                            document.querySelectorAll('.article-preview img.previous').forEach(img => {
+                                img.classList.remove('previous');
+                            });
+                        }, 500);
+                    }
+
+                    // Show new image
+                    const newImage = document.querySelector(`.article-preview img[data-article="${articleId}"]`);
+                    newImage.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

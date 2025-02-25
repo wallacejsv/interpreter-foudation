@@ -1,0 +1,424 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    background: transparent;
+    transition: background-color 0.3s ease;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 0;
+    }
+
+    &.scrolled {
+        background: rgba($primary-green, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .navbar-brand {
+        img {
+            height: 51px;
+        }
+    }
+
+    .navbar-nav {
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 12px;
+    }
+
+    .bt-donate-header {
+        margin-top: 15px;
+        border: none;
+    }
+
+    .nav-link {
+        color: $white;
+        font-family: 'PP Neue Montreal', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        padding: 0.5rem 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: rgba($white, 0.8);
+        }
+
+        &.dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: $font-heading;
+            font-weight: 700;
+            &::after {
+                display: none;
+            }
+
+            i {
+                font-size: 0.7rem;
+                transition: transform 0.3s ease;
+            }
+
+            &[aria-expanded="true"] i {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .dropdown-menu {
+        background: rgba($primary-green, 0.95);
+        border: none;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        backdrop-filter: blur(10px);
+        @media screen and (max-width: $breakpoint-lg) {
+            border-radius: 0;
+        }
+
+        .dropdown-item {
+            color: $white;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba($white, 0.1);
+            }
+        }
+    }
+
+    .donate-btn {
+        background: transparent;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba($white, 0.3);
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        transition: all 0.3s ease;
+        border: none;
+        color: #4C676B;
+        font-family: $font-heading;
+        font-weight: 700;
+        i {
+            font-size: 0.7rem;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            background: rgba($white, 0.1);
+            color: $white;
+            border-color: rgba($white, 0.5);
+
+            i {
+                transform: translateX(3px);
+            }
+        }
+    }
+
+    .search-item {
+        position: relative;
+        margin-left: 3rem;
+
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            background: rgba($white, 0.1);
+            border-radius: 50px;
+            padding: 0.25rem 0.5rem;
+            min-width: 200px;
+            border: 1px solid #ffffff52;
+        }
+
+        .search-input {
+            background: transparent;
+            border: none;
+            color: $white;
+            padding: 0.5rem 1rem;
+            width: 100%;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            font-family: $font-heading;
+            font-weight: 700;
+            &::placeholder {
+                color: rgba($white, 0.8);
+                text-transform: uppercase;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .search-button {
+            background: transparent;
+            border: none;
+            color: $white;
+            padding: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 0.85rem;
+            }
+
+            &:hover {
+                color: rgba($white, 0.8);
+            }
+        }
+    }
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 20px;
+        label {
+            color: $white;
+            font-size: 0.85rem;
+            font-family: $font-heading;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .dropdown {
+            background: #93BCC0;
+            border: none;
+            color: #fff;
+            font-family: $font-heading;
+            font-size: .85rem;
+            font-weight: 500;
+            padding: 2px 1rem;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            .btn {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 3px 0px;
+                border: none;
+                color: #4C676B;
+                font-size: 13px;
+                font-weight: 700;
+                font-family: $font-heading;
+                margin-left: 10px;
+                &:hover, &:focus, &:active {
+                    // background: rgba($white, 0.15);
+                    box-shadow: none;
+                    border: none;
+                    background: transparent;
+                }
+
+                i {
+                    font-size: 0.7rem;
+                    transition: transform 0.3s ease;
+                    margin-top: -3px;
+                }
+
+                &[aria-expanded="true"] i {
+                    transform: rotate(180deg);
+                }
+
+                &.dropdown-toggle::after {
+                    display: none;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            min-width: 100%;
+            background: rgba($primary-green, 0.95);
+            backdrop-filter: blur(10px);
+            border: none;
+            margin-top: 0.5rem;
+
+            .dropdown-item {
+                color: $white;
+                font-size: 0.85rem;
+                padding: 0.5rem 1rem;
+                font-family: $font-heading;
+                font-weight: 500;
+
+                &:hover {
+                    background: rgba($white, 0.1);
+                }
+            }
+        }
+
+        @media (max-width: $breakpoint-lg) {
+            margin: 0;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba($white, 0.1);
+            
+            .dropdown .btn {
+                width: 150px;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        .navbar {
+            padding: 1rem;
+            background: rgba($primary-green, 0.95);
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            .navbar-toggler-icon {
+                background-image: none;
+                position: relative;
+                width: 24px;
+                height: 2px;
+                background-color: $white;
+                transition: all 0.3s ease;
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 24px;
+                    height: 2px;
+                    background-color: $white;
+                    transition: all 0.3s ease;
+                }
+
+                &::before {
+                    top: -8px;
+                }
+
+                &::after {
+                    bottom: -8px;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                .navbar-toggler-icon {
+                    background-color: transparent;
+
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg);
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse {
+            background: rgba($primary-green, 0.95);
+            margin: 1rem -1rem -1rem;
+            padding: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-nav {
+            margin-top: 0;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            padding: 0.75rem 0;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba($white, 0.1);
+
+            &.dropdown-toggle {
+                justify-content: space-between;
+            }
+        }
+
+        .dropdown-menu {
+            background: transparent;
+            padding: 0;
+            margin-top: 0.5rem;
+            border-left: 1px solid rgba($white, 0.2);
+            margin-left: 1rem;
+
+            .dropdown-item {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+                
+                &:hover {
+                    background: rgba($white, 0.1);
+                }
+            }
+        }
+
+        .search-item {
+            margin-left: 0;
+            margin-top: 1rem;
+
+            .search-wrapper {
+                width: 100%;
+            }
+        }
+
+        .donate-item {
+            margin-top: 1rem;
+            border-top: 1px solid rgba($white, 0.1);
+            padding-top: 1rem;
+
+            .donate-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.75rem;
+                font-size: 1rem;
+                border: none;
+            }
+        }
+
+        .bt-donate-header {
+            display: none;
+        }
+    }
+}
+
+.container-custom-header {
+    gap: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3215686275);
+    padding-bottom: 20px;
+    @media (max-width: $breakpoint-lg) {
+        gap: 0;
+    }
+
+    .navbar-brand {
+        flex: 0 0 auto;
+    }
+
+    .language-selector {
+        flex: 0 0 auto;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        .language-selector {
+            order: -1;
+            width: 100%;
+        }
+    }
+}

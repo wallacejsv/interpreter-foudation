@@ -1,0 +1,257 @@
+.site-footer {
+    background: #fff;
+    padding: 100px 0 50px;
+    color: #93BCC0;
+    border-top: 1px solid rgba(147, 188, 192, 0.2);
+
+    .footer-content {
+        margin-left: 15px;
+        margin-right: 15px;
+        .row {
+            @media screen and (max-width: $breakpoint-lg) {
+                flex-direction: column;
+            }
+        }
+        .col {
+            border-left: 1px solid #4551531f;
+            padding-left: 25px;
+            padding-bottom: 70px;
+            h3 {
+                font-family: $font-heading;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #93BCC0;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                        font-family: $font-heading;
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        // margin-top: 80px;
+        padding-top: 40px;
+        border-top: 1px solid rgba(147, 188, 192, 0.2);
+
+        .footer-logo {
+            display: block;
+            max-width: 200px;
+            @media (max-width: $breakpoint-lg) {
+                max-width: 100%;
+                text-align: left;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .responsibility {
+            text-align: left;
+            font-family: $font-heading;
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 1.4;
+            border-left: 1px solid #93BCC0;
+            padding-left: 20px;
+            width: 200px;
+            height: 65px;
+        }
+
+        .nonprofit {
+            text-align: left;
+            font-family: $font-heading;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-left: 1px solid #93BCC0;
+            padding-left: 20px;
+            width: 200px;
+            height: 65px;
+        }
+
+        .footer-disclaimer {
+            margin-top: 30px;
+            font-family: $font-heading;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #93BCC0;
+            line-height: 1.6;
+        }
+    }
+
+    .footer-subscribe {
+        margin-top: 40px;
+        border-top: 1px solid rgba(147, 188, 192, .2);
+        background: #113639;
+        padding: 25px;
+        .form-content-item-footer {
+            margin-left: auto;
+        }
+        .subscribe-form {
+            display: flex;
+            input {
+                flex: 1;
+                background: transparent;
+                border: none;
+                border-bottom: 1px dotted rgba(147, 188, 192, 0.2);
+                padding: 10px 0;
+                color: #fff;
+                font-family: $font-heading;
+                font-size: 0.9rem;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 2px;
+                    height: 10px;
+                    background: #fff;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+                &::placeholder {
+                    color: #93BCC0;
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: #fff;
+                }
+            }
+
+            button {
+                background: transparent;
+                border: none;
+                color: #fff;
+                padding: 10px 30px;
+                border-radius: 50px;
+                font-family: $font-heading;
+                font-size: 0.9rem;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                i {
+                    font-size: 0.7rem;
+                    transition: transform 0.3s ease;
+                    @media screen and (max-width: $breakpoint-lg) {
+                        margin-top: -5px;
+                    }
+                }
+
+                &:hover {
+                    // background: rgba(255, 255, 255, 0.1);
+
+                    i {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+
+    .content-footer-bottom-final {
+        display: flex;
+        gap: 60px;
+        @media (max-width: $breakpoint-lg) {
+            flex-direction: column;
+            gap: 0;
+        }
+        .item {
+            @media (max-width: $breakpoint-lg) {
+                border-bottom: 1px solid #93BCC0;
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            &:first-child {
+                width: 200px;
+                a {
+                    img {
+                        width: fit-content;
+                    }
+                }
+            }
+            &:last-child {
+                @media (max-width: $breakpoint-lg) {
+                    border: none;
+                }
+                .nonprofit {
+                    width: fit-content;
+                    font-size: 10px;
+                    line-height: 16px;
+                    text-align: initial;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 60px 0 30px;
+
+        .footer-content {
+            .col {
+                margin-bottom: 40px;
+                @media screen and (max-width: $breakpoint-lg) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .footer-bottom {
+            text-align: center;
+
+            .footer-logo {
+                margin: 0 auto 20px;
+            }
+
+            .responsibility,
+            .nonprofit {
+                width: 100%;
+                text-align: left;
+                margin: 10px 0;
+                border-left: none;
+                padding-left: 0;
+                margin: 0;
+            }
+        }
+
+        .footer-subscribe {
+            .subscribe-form {
+                flex-direction: column;
+
+                button {
+                    width: 100%;
+                    justify-content: center;
+                    @media screen and (max-width: $breakpoint-lg) {
+                        justify-content: end;
+                        margin-top: 15px;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+} 

@@ -1,0 +1,106 @@
+.donate {
+    background: #103439;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+
+    .section-header {
+        h2 {
+            font-family: $font-heading;
+            font-weight: 700;
+            color: #93BCC0;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 7rem;
+            span {
+                font-size: 1.3rem;
+                color: #93BCC0;
+            }
+
+            @media (max-width: $breakpoint-lg) {
+                flex-direction: column;
+                font-size: 3rem;
+                span {
+                    font-size: 1.3rem;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+
+    .donate-description {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;
+
+        h3 {
+            color: #93BCC0;
+            font-family: $font-heading;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #93BCC0;
+            font-family: $font-heading;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .disclaimer {
+            font-style: italic;
+            margin-bottom: 0;
+        }
+    }
+
+    .donate-action {
+        text-align: center;
+        margin-top: 40px;
+
+        .donate-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-family: "PP Neue Montreal", sans-serif;
+            font-weight: 700;
+            font-size: .9rem;
+            padding: 12px 30px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            transition: all .3s ease;
+            i {
+                font-size: 0.7rem;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                color: #fff;
+                border-color: #fff;
+
+                i {
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 60px 0;
+
+        .donate-description {
+            padding: 0 20px;
+        }
+    }
+} 

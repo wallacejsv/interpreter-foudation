@@ -1,0 +1,182 @@
+.hero {
+    min-height: 100vh;
+    background-image: url('/assets/images/bg-hero.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 190px 0;
+    background-position-y: 1px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // background: $overlay-dark;
+    }
+    @media screen and (max-width: 768px) {
+        background-position-y: 0px;
+        padding-bottom: 29rem;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        .custom-hero {
+            margin-top: 60px;
+            text-align: center;
+            p.subtitle {
+                font-weight: 700;
+                font-size: 1.2rem;
+                font-family: $font-heading;
+                color: #fff;
+                letter-spacing: 0;
+                margin: 0;
+            }
+            h1 {
+                font-size: 8rem;
+                font-weight: bold;
+                letter-spacing: 2px;
+                margin-bottom: 3rem;
+                font-family: $font-heading;
+                letter-spacing: 0;
+                @media (max-width: $breakpoint-lg) {
+                    font-size: 3rem;
+                }
+            }
+            img {
+                z-index: 1;
+                position: relative;
+            }
+        }
+    }
+
+    .subtitle {
+        color: $white;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        color: $white;
+        font-size: 5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+        font-family: $font-heading;
+        @media (max-width: $breakpoint-lg) {
+            font-size: 3rem;
+        }
+    }
+
+    .accordion {
+        margin-left: -42px;
+        .accordion-item {
+            background: transparent;
+            border: none;
+            &:first-child {
+                .accordion-button {
+                    border-bottom: none;
+                }
+            }
+            &:last-child {
+                border-top: none;
+                .accordion-button {
+                    border-top: none;
+                }
+            }
+        }
+
+        .accordion-button {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-radius: 0px !important;
+            padding: 1.1rem 0;
+            font-family: "PP Neue Montreal", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+            &::after {
+                display: none;
+            }
+
+            i {
+                font-size: 0.8rem;
+                transition: transform 0.3s ease;
+                flex-shrink: 0;
+                margin-left: auto;
+                color: #000;
+            }
+
+            &:not(.collapsed) {
+                // background: rgba($white, 0.15);
+                // box-shadow: none;
+                // border-color: rgba($white, 0.4);
+
+                i {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &:hover {
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: rgba($white, 0.4);
+            }
+
+            .accordion-title {
+                flex: 1;
+                text-align: center;
+                color: $white;
+                font-family: $font-heading;
+                font-weight: 700;
+                color: #4C676B;
+                font-size: 1.2rem;
+            }
+        }
+
+        .accordion-body {
+            // background: rgba($white, 0.05);
+            border-bottom: 1px solid rgba($white, 0.2);
+            border-top: none;
+            // border-radius: 0 0 4px 4px;
+            padding: 1.5rem 2rem;
+            color: $white;
+            margin-top: -1px;
+        }
+
+        @media (max-width: $breakpoint-lg) {
+            margin: 2rem auto;
+
+            .accordion-button {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .accordion-body {
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+
+    .disclaimer {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 26px;
+        max-width: 690px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+} 
