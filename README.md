@@ -2,7 +2,7 @@
 
 Um site moderno e responsivo para The Interpreter Foundation, desenvolvido com HTML, SCSS e JavaScript.
 
-![The Interpreter Foundation Screenshot](assets/images/screenshot.png)
+![The Interpreter Foundation Screenshot](screenshot.png)
 
 ## 🚀 Tecnologias
 
