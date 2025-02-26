@@ -17,12 +17,14 @@ Um site moderno e responsivo para The Interpreter Foundation, desenvolvido com H
 
 ## 📦 Estrutura do Projeto 
 
+```
+interpreter-foundation/
 ├── assets/
-│ ├── fonts/
-│ │ └── ppneuemontreal-.woff
-│ └── images/
+│   ├── fonts/
+│   │   └── ppneuemontreal-.woff
+│   └── images/
 ├── dist/
-│ └── css/
+│   └── css/
 ├── src/
 │ └── scss/
 │ ├── components/
@@ -42,6 +44,7 @@ Um site moderno e responsivo para The Interpreter Foundation, desenvolvido com H
 ├── gulpfile.js
 ├── package.json
 └── index.html
+```
 
 ## 🛠️ Instalação
 
