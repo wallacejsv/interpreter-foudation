@@ -180,3 +180,19 @@
         margin-top: 40px;
     }
 } 
+
+@media (max-width: 1200px) {
+    .hero .container .custom-hero img {
+        width: 100%;
+    }
+    .hero .container .custom-hero .row .col-md-3 {
+        margin-right: 35px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .container .custom-hero .row .col-md-3 {
+        display: none;
+    }
+}

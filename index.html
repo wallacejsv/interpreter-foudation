@@ -6,6 +6,9 @@
     <title>The Interpreter Foundation</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -109,7 +112,7 @@
                         <div class="col-md-3">
                             <img src="/assets/images/jesus.jpg" alt="Jesus" title="Jesus">
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-9" data-aos="zoom-in">
                             <div class="accordion">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
@@ -168,7 +171,7 @@
     <section class="features">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
                     <div class="feature-card">
                         <div class="image-wrapper">
                             <img src="/assets/images/man1.jpg" alt="The Journal">
@@ -182,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-card">
                         <div class="image-wrapper">
                             <img src="/assets/images/woman1.jpg" alt="Come, Follow Me">
@@ -196,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
                         <div class="image-wrapper">
                             <img src="/assets/images/picture.jpg" alt="Study Series">
@@ -218,13 +221,13 @@
     <section class="whats-happening">
         <div class="container">
             <div class="section-header">
-                <h2>WHAT'S <span>HAPPENING</span></h2>
-                <a href="#" class="view-all desktop">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
+                <h2 data-aos="zoom-in">WHAT'S <span>HAPPENING</span></h2>
+                <a href="#" class="view-all desktop" data-aos="zoom-in" data-aos-delay="200">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
             </div>
             
 
             <div class="happening-items">
-                <div class="happening-item">
+                <div class="happening-item" data-aos="zoom-in-up" data-aos-delay="0">
                     <div class="image-wrapper">
                         <img src="/assets/images/happening1.jpg" alt="Temple on Mount Zion Conference">
                     </div>
@@ -240,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="happening-item">
+                <div class="happening-item" data-aos="zoom-in-up" data-aos-delay="100">
                     <div class="image-wrapper">
                         <img src="/assets/images/happening2.jpg" alt="Temple on Mount Zion Conference">
                     </div>
@@ -256,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="happening-item">
+                <div class="happening-item" data-aos="zoom-in-up" data-aos-delay="200">
                     <div class="image-wrapper">
                         <img src="/assets/images/happening3.jpg" alt="Temple on Mount Zion Conference">
                     </div>
@@ -272,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="happening-item">
+                <div class="happening-item" data-aos="zoom-in-up" data-aos-delay="300">
                     <div class="image-wrapper">
                         <img src="/assets/images/happening4.jpg" alt="Temple on Mount Zion Conference">
                     </div>
@@ -296,42 +299,42 @@
     <section class="latest-articles">
         <div class="container">
             <div class="section-header">
-                <h2>LATEST <span>ARTICLES</span></h2>
+                <h2 data-aos="zoom-in">LATEST <span>ARTICLES</span></h2>
                 <!-- <a href="#" class="view-all">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a> -->
             </div>
 
             <div class="articles-content">
                 <div class="articles-list">
-                    <div class="article-item active" data-article="1">
+                    <div class="article-item active" data-article="1" data-aos="zoom-in-up" data-aos-delay="0">
                         <span class="category"><b>STUDY SERIES</b></span>
                         <h3>SCRIPTURAL REFERENCES</h3>
                         <span class="date">Author | 01.02.2024</span>
                     </div>
-                    <div class="article-item" data-article="2">
+                    <div class="article-item" data-article="2" data-aos="zoom-in-up" data-aos-delay="100">
                         <span class="category"><b>THE JOURNAL</b></span>
                         <h3>LESSON PLANS</h3>
                         <span class="date">Author | 01.02.2024</span>
                     </div>
-                    <div class="article-item" data-article="3">
+                    <div class="article-item" data-article="3" data-aos="zoom-in-up" data-aos-delay="200">
                         <span class="category"><b>STUDY ARTICLE</b></span>
                         <h3>RESEARCH OF FAITH</h3>
                         <span class="date">Author | 01.02.2024</span>
                     </div>
-                    <div class="article-item" data-article="4">
+                    <div class="article-item" data-article="4" data-aos="zoom-in-up" data-aos-delay="300">
                         <span class="category"><b>STUDY SERIES</b></span>
                         <h3>SCHOLARLY RELEASES</h3>
                         <span class="date">Author | 01.02.2024</span>
                     </div>
                 </div>
 
-                <div class="article-preview">
+                <div class="article-preview" data-aos="zoom-in-up" data-aos-delay="400">
                     <img src="/assets/images/article1.png" alt="Article Preview" class="active" data-article="1">
                     <img src="/assets/images/article2.png" alt="Article Preview" data-article="2">
                     <img src="/assets/images/article1.png" alt="Article Preview" data-article="3">
                     <img src="/assets/images/article2.png" alt="Article Preview" data-article="4">
                 </div>
 
-                <div class="article-content">
+                <div class="article-content" data-aos="zoom-in-up" data-aos-delay="500">
                     <div class="content active" data-article="1">
                         <p>Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus. Nam libero tempore, cum soluta nobis estem eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda estem omnis dolor repellendus.</p>
                         <a href="#" class="read-more">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
@@ -357,10 +360,10 @@
     <section class="topic-materials">
         <div class="container">
             <div class="section-header">
-                <h2>Topic Based <span>Materials</span></h2>
+                <h2 data-aos="zoom-in">Topic Based <span>Materials</span></h2>
             </div>
 
-            <div class="materials-description">
+            <div class="materials-description" data-aos="zoom-in-up" data-aos-delay="100">
                 <p>Begin your study journey here. Dig deep into the topics that interest you and
                     use our vast array of media  to find answers, gather knowledge, and ultimately
                     gain a better understanding of the teachings of the Church.</p>
@@ -371,23 +374,23 @@
                     <img src="/assets/images/materials.png" alt="Topic Based Materials">
                 </div>
                 <div class="materials-links">
-                    <a href="#0" class="material-link">
+                    <a href="#0" class="material-link" data-aos="zoom-in-up" data-aos-delay="200">
                         INTERPRETER RADIO
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
-                    <a href="#0" class="material-link">
+                    <a href="#0" class="material-link" data-aos="zoom-in-up" data-aos-delay="300">
                         INTERPRETER CONFERENCES
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
-                    <a href="#0" class="material-link">
+                    <a href="#0" class="material-link" data-aos="zoom-in-up" data-aos-delay="400">
                         INTERPRETER STUDY TRAVEL
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
-                    <a href="#0" class="material-link">
+                    <a href="#0" class="material-link" data-aos="zoom-in-up" data-aos-delay="500">
                         INTERPRETER BOOKS
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
-                    <a href="#0" class="material-link">
+                    <a href="#0" class="material-link" data-aos="zoom-in-up" data-aos-delay="600">
                         INTERPRETER FILMS
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
@@ -395,7 +398,7 @@
             </div>
 
             <div class="text-end">
-                <a href="#" class="view-all">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="view-all" data-aos="zoom-in-up" data-aos-delay="700">VIEW ALL <i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </div>
     </section>
@@ -404,10 +407,10 @@
     <section class="donate">
         <div class="container">
             <div class="section-header">
-                <h2>DONATE <span>NOW</span></h2>
+                <h2 data-aos="zoom-in">DONATE <span>NOW</span></h2>
             </div>
 
-            <div class="donate-description">
+            <div class="donate-description" data-aos="zoom-in-up" data-aos-delay="100">
                 <h3>DONATE TO THE CAUSE</h3>
                 <p>
                     The Interpreter Foundation is a nonprofit organization. All journal publications and video presentations are available for free by digital download and streaming. 
@@ -420,7 +423,7 @@
             </div>
 
             <div class="donate-action">
-                <a href="#" class="donate-button">
+                <a href="#" class="donate-button" data-aos="zoom-in-up" data-aos-delay="200">
                     DONATE <i class="fa-solid fa-chevron-right"></i>
                 </a>
             </div>
@@ -535,6 +538,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
+        AOS.init();
         document.addEventListener('DOMContentLoaded', function() {
             const header = document.querySelector('.site-header');
             
@@ -588,6 +592,13 @@
                 });
             });
         });
+
+        // use a script tag or an external JS file
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.fromTo(".hero .container .custom-hero h1", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 1.5, ease: "bounce.out" });
+            gsap.fromTo(".hero .container .custom-hero p.subtitle", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 2.5, ease: "bounce.out" });
+        });
+
     </script>
 </body>
 </html> 
